@@ -1,6 +1,6 @@
+#Requirements:
+
 1.
- 
-Requirements:
  
 Write a function to retrieve a value according to a path in a data structure contains nested object. If any of the value is undefined along the path, the result will be undefined.
  
@@ -23,7 +23,7 @@ In this data structure, any nested object can be undefined. That is for example,
  
 If this function is named path then the following needs to be true:
   path([‘pet’, ‘kid’, ’name’])(data) // === ‘Tia’
-  path([‘pet’, ‘kid’, ’owner’])(data) // === {name: ’Time’}
+  path([‘pet’, ‘kid’, ’owner’])(data) // === {name: ’Tim’}
   path([‘pet’, ‘owner’])(data) // === undefined
  
 Code needs to be written in javascript. 
@@ -43,3 +43,13 @@ cuAdd(1, 2, 3) === 6
 cuAdd(1)(2, 3) === 6
 cuAdd(1, 2)(3) === 6
 cuAdd(1)(2)(3) === 6
+
+
+#installation:
+
+npm install
+
+
+#test:
+
+npm test
