@@ -1,3 +1,5 @@
+/*recursive */
+/*
 const path = a => v => {
   if (!v) return undefined
   if (!a.length) return undefined
@@ -14,7 +16,13 @@ const path = a => v => {
      return undefined;  
   
 }
-
+*/
+/* reduce */
+const getProperty = (initial, arrayValue) => {
+ 
+  return initial[arrayValue] ? initial[arrayValue] : undefined
+}
+const path = array => value => array.reduce(getProperty, value)
 
 export default path
 /*
